@@ -1,6 +1,5 @@
 # Cekresi
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ipanardian/cekresi-cli/issues)
-
 [![Build Status](https://travis-ci.org/madaarya/cekresi.svg?branch=master)](https://travis-ci.org/madaarya/cekresi)
 
 ## Installation
