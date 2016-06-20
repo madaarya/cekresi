@@ -10,7 +10,7 @@ module Cekresi
         data = item.text
         hash_el = item.text.split(" : ")
         key_name = parse_info_attribute(hash_el)
-        delivery_info_data[key_name] = hash_el.last
+        delivery_info_data[key_name.to_sym] = hash_el.last
       end
 
       tracking_number_info.each_with_index do |tracking_number, index|
@@ -23,7 +23,7 @@ module Cekresi
               tracking_data << {shipment_date: tracking_list_data[0].text, shipment_location: tracking_list_data[1].text, shipment_status: tracking_list_data[2].text}
             end
           end
-          delivery_status_data[key_name] = tracking_data
+          delivery_status_data[key_name.to_sym] = tracking_data
         end
       end
 
