@@ -1,8 +1,7 @@
 # Cekresi
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ipanardian/cekresi-cli/issues)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cekresi`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[![Build Status](https://travis-ci.org/madaarya/cekresi.svg?branch=master)](https://travis-ci.org/madaarya/cekresi)
 
 ## Installation
 
@@ -22,17 +21,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just simple
+```ruby
+Cekresi.fetch("your tracking_number")
+```
 
-## Development
+## Expedition
+* JNE
+* TIKI
+* POS
+* EMS
+* Wahana
+* Citoxpress
+* Pandu Logistics
+* REX Indonesia
+* Rosalia Express
+* First Logistics
+* RPX Holding
+* TIKINDO
+* PAHALA
+* Sicepat
+* Nex Logistic
+* Lion Express
+* Pos Laju
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Data Source
+Currently data source is from cekresi.com
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cekresi.
+Bug reports and pull requests are welcome on GitHub at https://github.com/madaarya/cekresi.
 
 
 ## License
