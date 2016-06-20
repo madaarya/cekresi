@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mada Aryakusumah"]
   spec.email         = ["mada@41studio.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Tracking AWB number use http://cekresi.com.}
+  spec.description   = %q{Ruby helper for get data from http://cekresi.com.}
+  spec.homepage      = "http://rubygems.org/gems/cekresi"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "capybara", '~> 2.7', ">= 2.7.1"
+  spec.add_development_dependency 'poltergeist', '~> 1.9', ">= 1.9.0"
 end
