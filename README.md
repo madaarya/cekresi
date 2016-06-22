@@ -45,15 +45,17 @@ Cekresi.fetch("your tracking_number")
 * Lion Express
 * Pos Laju
 
+## Something went wrong
+
+Find bugs or error? :cry: Do you have better code? :heart_eyes:  Excellent!
+
+[Please open an issue](https://github.com/madaarya/cekresi/issues/new) or [Open a Pull Request](https://github.com/madaarya/cekresi/pulls) to fix it.
+
+Thank you in advance! :wink: :beer:
+
 ## Data Source
 Currently data source is from cekresi.com
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/madaarya/cekresi.
-
-
 ## License
-
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
