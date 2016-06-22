@@ -7,7 +7,6 @@ module Cekresi
 
       delivery_status_data, delivery_info_data = {}, {}
       delivery_info.all("tr").each do |item|
-        data = item.text
         hash_el = item.text.split(" : ")
         key_name = parse_info_attribute(hash_el)
         delivery_info_data[key_name.to_sym] = hash_el.last
@@ -15,10 +14,10 @@ module Cekresi
 
       tracking_number_info.each_with_index do |tracking_number, index|
         unless index.zero?
-          key_name = tracking_number.find("b").text.gsub(" ","_").downcase
+          key_name = tracking_number.find("b").text.tr(" ","_").downcase
           tracking_data = []
-          tracking_number.all('tr').each_with_index do |list, index|
-            unless index.zero?
+          tracking_number.all('tr').each_with_index do |list, tracking_number_index|
+            unless tracking_number_index.zero?
               tracking_list_data = list.all('td')
               tracking_data << {shipment_date: tracking_list_data[0].text, shipment_location: tracking_list_data[1].text, shipment_status: tracking_list_data[2].text}
             end
@@ -27,12 +26,12 @@ module Cekresi
         end
       end
 
-      return {status: :ok, delivery_info: delivery_info_data, delivery_status: delivery_status_data}
+      return {status: :ok, expedition_name: expedition_name, delivery_info: delivery_info_data, delivery_status: delivery_status_data}
     end
 
     
     def self.parse_info_attribute(info)
-      new_key = info.first.gsub(" ","_").downcase
+      new_key = info.first.tr(" ","_").downcase
       case new_key
       when "no_resi"
         new_key = 'tracking_number'
