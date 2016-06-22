@@ -30,7 +30,7 @@ module Cekresi
       else
         result = {status: :not_found, message: 'Sorry your search not found'}
       end
-    rescue Capybara::ElementNotFound => e
+    rescue Capybara::ElementNotFound
       result = {status: :not_found, message: 'There is problem from cekresi.com, please try again'}
     end
 
